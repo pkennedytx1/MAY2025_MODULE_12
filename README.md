@@ -40,6 +40,36 @@ An interactive React playground for hands-on learning of React concepts includin
 
 4. **Open your browser** and navigate to the URL shown in the terminal
 
+## 🚀 Deployment
+
+### GitHub Pages (Recommended)
+
+This project is configured for automatic deployment to GitHub Pages using GitHub Actions.
+
+1. **Push your code to GitHub**
+   ```bash
+   git add .
+   git commit -m "Initial commit"
+   git push origin main
+   ```
+
+2. **Enable GitHub Pages**
+   - Go to your repository on GitHub
+   - Click **Settings** → **Pages**
+   - Under **Source**, select **GitHub Actions**
+   - The site will automatically deploy on every push to main/master
+
+3. **Manual deployment** (if needed)
+   ```bash
+   npm run deploy
+   ```
+
+### Other Platforms
+
+- **Netlify**: Drag and drop the `dist` folder after running `npm run build`
+- **Vercel**: Connect your GitHub repo for automatic deployments
+- **Firebase Hosting**: Use `firebase deploy` after building
+
 ## 🎯 Learning Path
 
 1. **Start Here** → Object Destructuring Playground
@@ -53,6 +83,7 @@ An interactive React playground for hands-on learning of React concepts includin
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build
 - `npm run lint` - Run ESLint for code quality
+- `npm run deploy` - Deploy to GitHub Pages (manual)
 
 ## 💡 Pro Tips
 
